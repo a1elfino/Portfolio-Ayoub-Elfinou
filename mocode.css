@@ -76,6 +76,22 @@ nav ul li:hover {
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
 }
+.btn {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.icone {
+    width: 50px;
+}
 .page-content .presentation-image {
 	margin-top: 5%;
 }
