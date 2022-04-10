@@ -135,7 +135,56 @@ nav ul li:hover {
 	color: rgb(145,145,145);
 
 }
-
+.sub-menu-1{
+	display: none;
+}
+nav ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background: #fff ;
+	margin-top:15px ;
+	margin-left: 15px;
+}
+nav ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+nav ul li:hover .sub-menu-1 ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+nav ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+nav ul li:hover .sub-menu-1 ul li:hover
+{
+color: #FCE5E5; 	
+}
+nav ul li:hover .sub-menu-1 ul li a:hover
+{
+	color: #FAC3C3;
+}
+.fa-angle-right 
+{
+	float: right;
+}
+.sub-menu-2
+{
+	display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background: #fff;
+}
 footer{
 	margin-top: 5%;
 	display: flex;
@@ -162,7 +211,8 @@ footer .colonne p:hover {
 		justify-content: center ;
 	}
 	nav ul {
-		display: none ;
+		flex: none ;
+		 
 	}
 	.page-content header {
 	margin-top: 10%;
