@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Oswald:wght@300&display=swap');
+
 body{
 	padding: 0 2.5%;
 	margin :0px ;
@@ -306,5 +307,5 @@ footer .colonne p:hover {
 	}
 	form .corps-formulaire .droite{
 	margin-left: 10px;
-}
+	}
 }
