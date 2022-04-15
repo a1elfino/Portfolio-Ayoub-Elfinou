@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php
+if(isset($_POST['mailform']))
+{
+	if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message']))
+	{
+		$header="MIME-Version: 1.0\r\n";
+		$header.='From:"VOTRE NOM"<email-expediteur@example.org>'."\n";
+		$header.='Content-Type:text/html; charset="uft-8"'."\n";
+		$header.='Content-Transfer-Encoding: 8bit';
+
+		$message='';
+
+		mail("email-destinataire@example.org", "CONTACT - Monsite.com", $message, $header);
+		$msg="Votre message a bien été envoyé !";
+	}
+	else
+	{
+		$msg="Tous les champs doivent être complétés !";
+	}
+}
+?>
+<html>
 <html lang="fr">
 <head>
 	<title>Portfolio AYOUB ELFINOU</title> 
@@ -176,6 +197,12 @@
 				<button>Envoyer mon message</button>
 			</div>
 		</form>
+				<?php
+		if(isset($msg))
+		{
+			echo $msg;
+		}
+		?>
 	</footer>
 </body>
  <script src="btn.js"></script>
